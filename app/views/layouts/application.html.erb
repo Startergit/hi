@@ -2,13 +2,15 @@
 <html>
 <head>
   <title>Hi</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %> <!--embedded ruby #1-->
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %> <!--embedded ruby #2-->
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+	<!--created navigation link to Home and About. Shown on every page-->
+	<%= link_to "Home", root_path %>
+	<%= link_to "About Us", about_path %>
+	<%= yield %> <!--embedded ruby #3-->
 
 </body>
 </html>
