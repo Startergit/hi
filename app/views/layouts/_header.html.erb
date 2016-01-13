@@ -1,0 +1,29 @@
+<!--partials: little snippet of html code that you can pull out of a html file and include later from somewhere else-->
+<!--used for a few reasons: 1) don't wanna dupliate same code. and if there's alot of code and it can stand on its own, it can simplify things-->
+<!--partial: _. should not be accssed by itself. -->
+
+<nav class="navbar navbar-inverse navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Pinteresting</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav navbar-right">
+        <!--created navigation link to Home and About; shown on every page-->
+        <li><%= link_to "Home", root_path %></li>
+      	<li><%= link_to "About", about_path %></li> 
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+

@@ -5,12 +5,15 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %> <!--embedded ruby #1-->
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %> <!--embedded ruby #2-->
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--responsiveness on mobile device-->
 </head>
 <body>
-	<!--created navigation link to Home and About. Shown on every page-->
-	<%= link_to "Home", root_path %>
-	<%= link_to "About Us", about_path %>
-	<%= yield %> <!--embedded ruby #3-->
+
+	<!--creates link to partial-->
+	<%=render 'layouts/header' %>
+	<div class="container">
+		<%= yield %> <!--embedded ruby #3-->
+	</div>
 
 </body>
 </html>
