@@ -5,5 +5,6 @@ class CreatePins < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_index :pins, :user_id
   end
 end
