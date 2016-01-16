@@ -50,5 +50,8 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  # create seed data files from the existing data in your database.
+  gem 'seed_dump'
 end
 
