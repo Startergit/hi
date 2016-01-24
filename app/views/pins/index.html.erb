@@ -25,3 +25,7 @@
     </div> <!--div class box panel panel-default-->
   <% end %> <!--end of pins.each do |pins|-->
 </div> <!--div pins and transitions enabled-->
+
+<div class="center">
+   <%= will_paginate @pins, renderer: BootstrapPagination::Rails %>
+</div>
